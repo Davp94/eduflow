@@ -1,0 +1,42 @@
+.footer {
+    background-color: rgb(102, 105, 107);
+    padding: 4rem 0;
+    margin-top: auto;
+    border-top: 1px solid rgb(102, 105, 107);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer-link {
+    color:rgb(69, 70, 71);
+    font-size: 1.5rem;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: rgb(49, 50, 52);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+    color: rgb(69, 70, 71);
+}
+
+.footer-copy {
+    color: rgb(69, 70, 71);
+    font-size: 0.86rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
