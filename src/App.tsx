@@ -6,21 +6,24 @@ import './App.css'
 import Layout from './components/Layout'
 import LandingPage from './pages/LandingPage'
 import DashboardPage from './pages/DashboardPage'
+import { ThemeContext, ThemeProvider } from './state-management/ThemeContext'
 //functions, types, utils, ...
 
 function App() {
   //COMPONENT LOGIC
-  
+
   //VISUAL COMPONENT
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Layout/>}>
-          <Route index element={<LandingPage/>}></Route>
-          <Route path='dashboard' element={<DashboardPage/>}></Route>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<LandingPage />}></Route>
+            <Route path='dashboard' element={<DashboardPage />}></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }
 

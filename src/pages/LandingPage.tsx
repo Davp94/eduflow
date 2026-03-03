@@ -46,7 +46,7 @@ function LandingPage() {
                         </div>
                     </div>
                     <div className="hero-image-wrapper">
-                        <img src="" alt="Image hero eduflow" className="hero-image"/>
+                        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=600&auto=format&fit=crop" alt="Image hero eduflow" className="hero-image"/>
                     </div>
                 </section>
                 <section className="container features-section">
