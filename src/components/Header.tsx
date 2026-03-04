@@ -31,19 +31,19 @@ function Header() {
                         {/* if (isDashboard) (<></>) else (<></>) */}
                         {isDashboard ? (
                             <>
-                                <NavLink to="/dashboard" className="nav-link">Dashboard</NavLink>
-                                <NavLink to="/dashboard" className="nav-link">Courses</NavLink>
-                                <NavLink to="/" className="nav-link">Students</NavLink>
-                                <NavLink to="/" className="nav-link">Reports</NavLink>
+                                <NavLink to="/dashboard" end className="nav-link">Dashboard</NavLink>
+                                <NavLink to="/courses" className="nav-link">Courses</NavLink>
+                                <NavLink to="/students" className="nav-link">Students</NavLink>
+                                <NavLink to="/reports" className="nav-link">Reports</NavLink>
                             </>
-                        ):(
+                        ) : (
                             <>
                                 <NavLink to="/" className="nav-link">Home</NavLink>
                                 <NavLink to="/dashboard" className="nav-link">Courses</NavLink>
                                 <NavLink to="/about" className="nav-link">About</NavLink>
                             </>
                         )}
-                       
+
                     </nav>
                     <div className="header-actions">
                         {/* if(isDashbpard) (<></>) */}
@@ -53,13 +53,13 @@ function Header() {
                                 <button className="icon-btn"><Settings size={18} /></button>
                             </>
                         )}
-                         {/* if(!isDashbpard) (<></>) */}
+                        {/* if(!isDashbpard) (<></>) */}
                         {!isDashboard && (
                             <>
                                 <button className="icon-btn"><Moon size={18} /></button>
                             </>
                         )}
-                       
+
                     </div>
                 </div>
             </header>
