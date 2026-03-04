@@ -1,10 +1,17 @@
-import { LayoutDashboard, Moon, Search, Settings } from "lucide-react"
+import { LayoutDashboard, Moon, Search, Settings, Sun } from "lucide-react"
 import { NavLink, useLocation } from "react-router-dom"
 import './Header.css'
+import { useContext } from "react";
+import { ThemeContext } from "../state-management/ThemeContext";
 function Header() {
     //COMPONENT LOGIC
     const location = useLocation();
     const isDashboard = location.pathname.includes('/dashboard');
+    const themeContext = useContext(ThemeContext);
+
+    const changeTheme = () => {
+        themeContext?.toogleTheme()
+    }
     //VISUAL COMPONENT
     return (
         <>
@@ -56,7 +63,10 @@ function Header() {
                         {/* if(!isDashbpard) (<></>) */}
                         {!isDashboard && (
                             <>
-                                <button className="icon-btn"><Moon size={18} /></button>
+                                <button className="icon-btn" onClick={() => changeTheme()}>
+                                    {themeContext?.theme == 'light' ? (<Moon size={18} />):(<Sun size={18}/>)}
+                                    
+                                </button>
                             </>
                         )}
 

@@ -6,7 +6,7 @@ import './App.css'
 import Layout from './components/Layout'
 import LandingPage from './pages/LandingPage'
 import DashboardPage from './pages/DashboardPage'
-import { ThemeContext, ThemeProvider } from './state-management/ThemeContext'
+import { ThemeProvider } from './state-management/ThemeContext'
 //functions, types, utils, ...
 
 function App() {

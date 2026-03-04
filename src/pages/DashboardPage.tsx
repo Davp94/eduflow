@@ -32,7 +32,6 @@ function DashboardPage() {
             <p className="add-course-subtitle">Set up a new curriculum</p>
           </div>
           {courses.map((course => (
-            <>
               <CourseCard
                 key={course.id}
                 id={course.id}
@@ -43,7 +42,6 @@ function DashboardPage() {
                 imageUrl={course.imageUrl}
                 onToggle={toggleCourseActive}
               />
-            </>
           )))}
         </div>
         <div className="generator-banner">

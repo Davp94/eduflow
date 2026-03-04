@@ -5,11 +5,13 @@ import { BarChart2, BookOpen, FolderHeart } from "lucide-react";
 
 // styles
 import './LandingPage.css';
+import { useContext } from "react";
+import { ThemeContext } from "../state-management/ThemeContext";
 
 function LandingPage() {
     //COMPONENT LOGIC
     const navigate = useNavigate();
-
+    const themeContext = useContext(ThemeContext);
     const features = [
         {
             icon: <BookOpen />,
@@ -31,7 +33,7 @@ function LandingPage() {
     return (
         <>
             <div className="landing-page">
-                <section className="container hero-section">
+                <section className={`container hero-${themeContext?.theme}-section`}>
                     <div className="hero-content">
                         <p className="hero-subtitle">Intelligent Education Management</p>
                         <h1 className="hero-title">Streamline <br /> your <br /> <span>Classroom</span></h1>

@@ -19,7 +19,7 @@ function CourseCard({
     onToggle }: CourseCardProps) {
     return (
         <>
-            <div className="course-card">
+            <div className="course-card" key={id}>
                 <div className="course-image-container">
                     {imageUrl ? (
                         <img src={imageUrl} alt={title} className="course-iamge" />
