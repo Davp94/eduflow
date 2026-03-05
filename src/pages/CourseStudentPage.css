@@ -1,0 +1,237 @@
+/* Course Students Page Styles */
+.students-page {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumbs .text-primary {
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.breadcrumbs .current-page {
+    color: var(--text-dark);
+}
+
+.students-header-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.students-header-title h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+    color: #111827;
+}
+
+.students-header-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--text-gray);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.students-header-subtitle span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.students-header-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-secondary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f1f5f9;
+    color: #475569;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #e2e8f0;
+}
+
+/* Table container styling */
+.table-container {
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.students-table th,
+.students-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.students-table th {
+    background-color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.students-table tbody tr {
+    transition: background-color 0.2s;
+}
+
+.students-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.students-table td {
+    font-size: 0.875rem;
+    color: #475569;
+    vertical-align: middle;
+}
+
+.student-id-cell {
+    font-weight: 600;
+    color: #64748b;
+}
+
+.student-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.student-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #e0f2fe;
+    color: #0284c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* Add an alternate avatar color to match design variablity */
+.student-avatar.alt-1 {
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+.student-avatar.alt-2 {
+    background-color: #f3f4f6;
+    color: #374151;
+}
+
+.grade-val {
+    font-weight: 800;
+    font-size: 1rem;
+    color: #0f172a;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.icon-btn:hover {
+    color: #475569;
+    background-color: #f1f5f9;
+}
+
+.grade-action-btn {
+    background-color: #e0f2fe;
+    color: var(--primary-blue);
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+.grade-action-btn:hover {
+    background-color: #bae6fd;
+}
+
+.table-footer {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    font-size: 0.875rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.pagination-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pagination-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.pagination-btn:hover {
+    color: #475569;
+}

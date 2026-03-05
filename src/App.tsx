@@ -7,6 +7,7 @@ import Layout from './components/Layout'
 import LandingPage from './pages/LandingPage'
 import DashboardPage from './pages/DashboardPage'
 import { ThemeProvider } from './state-management/ThemeContext'
+import CourseStudentsPage from './pages/CourseStudentPage'
 //functions, types, utils, ...
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' element={<Layout />}>
             <Route index element={<LandingPage />}></Route>
             <Route path='dashboard' element={<DashboardPage />}></Route>
+            <Route path='courses/:courseId/students' element={<CourseStudentsPage />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

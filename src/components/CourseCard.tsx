@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 
 
 interface CourseCardProps {
@@ -17,10 +18,14 @@ function CourseCard({
     isActive,
     imageUrl,
     onToggle }: CourseCardProps) {
+    const navigate = useNavigate();    
     return (
         <>
             <div className="course-card" key={id}>
-                <div className="course-image-container">
+                <div 
+                    className="course-image-container"
+                    onClick={() => navigate(`/courses/${id}/students`)}
+                >
                     {imageUrl ? (
                         <img src={imageUrl} alt={title} className="course-iamge" />
                     ) : (
